@@ -6,6 +6,7 @@ p, h1, h2, h3, a {
 
 p {
   padding: 10px;
+  font-size: 2em;
 }
 
 *{
@@ -24,20 +25,16 @@ p {
   text-align: center;
 }
 
-h1{
-  font-size: 3.5em;
+h1 {
+  font-size: 4.5em;
 }
 
-.home_page p{
-  font-size: 2em;
-}
-
-.home_page img{
+.home_page img {
   max-width: 200px;
   max-height: 200px;
 }
 
-#arrow{
+#arrow {
     width: 100%;
     height: 50px;
     text-align: center;
@@ -57,7 +54,7 @@ h1{
     font: 36px Heiti, 'Lucida Grande', Arial;
     font-weight: bold;
 }
-#arrow span{
+#arrow span {
     display: inline-block;
     position: relative;
     top: -18px;
@@ -66,24 +63,24 @@ h1{
     -webkit-transition: all 0.7s cubic-bezier(0.7, 0.01, 0.3, 1);
     transition: all 0.7s cubic-bezier(0.7, 0.01, 0.3, 1);
 }
-#arrow:hover{
+#arrow:hover {
     background: #23ccbe;
 }
-#arrow:hover span{
+#arrow:hover span {
     top: 0;
     color: #FFF;
 }
 
-a, a:visited {
+.section a, a:visited {
   color: #23ccbe;
   text-decoration: none;
   border-bottom: 1px solid #ededed;
 }
 
-a:hover {
-  color: #2196f3;
+.section a:hover {
+  color: #199a90;
   border-color: #bbb;
-  border-bottom: 1px solid #2196f3;
+  border-bottom: 1px solid #199a90;
 }
 
 .tag_pannel {
@@ -125,5 +122,29 @@ a:hover {
 }
 
 .section.leaving {
-  background-color: #23ccbe;
+  background-color: #90e2dc;
+}
+
+.blue {
+  color: #23ccbe;
+}
+
+@media screen and (max-width: 900px) {
+  p {
+    font-size: 1.5em;
+  }
+
+  .home_page img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  h1 {
+    font-size: 3.5em;
+  }
+
+  .tag {
+    font-size: 1.2em;
+  }
+
 }

@@ -2,7 +2,7 @@ $(document).ready(function(){
   $("#pagepiling").pagepiling({
     verticalCentered: false,
     navigation: {
-            'textColor': '#fffff',
+            'textColor': '#000',
             'bulletsColor': '#000000',
             'position': 'left',
             'tooltips': ['Home', 'Professions', 'Projects', 'Education', 'Contact Me']
