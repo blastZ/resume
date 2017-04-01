@@ -19,6 +19,7 @@ p {
 
 .section {
   background-color: #fbfbf9;
+  padding: 50px;
 }
 
 .home_page, .professions_page, .projects_page, .education_page, .contacts_page {
@@ -127,6 +128,34 @@ h1 {
 
 .blue {
   color: #23ccbe;
+}
+
+.projects_item p {
+  padding: 0;
+}
+
+.projects_item a {
+  font-size: 1.5em;
+}
+
+.projects_item p {
+  font-size: 2.1em;
+}
+
+.projects_item_more {
+  margin-top: 2em;
+}
+
+.projects_item_more a {
+  color: #1dec25;
+  font-size: 1.6em;
+  border: 0;
+}
+
+.projects_item_more a:hover {
+  border: 0;
+  color: #0a920f;
+
 }
 
 @media screen and (max-width: 900px) {
