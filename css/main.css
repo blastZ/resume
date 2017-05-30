@@ -1,4 +1,4 @@
-*{
+*, *::after, *::before{
     font-family: 'Ranga', cursive;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -150,10 +150,6 @@ h1 {
   background-color: #90e2dc;
 }
 
-.blue {
-  color: #23ccbe;
-}
-
 .projects_item p {
   padding: 0;
   font-size: 2.1em;
@@ -175,6 +171,43 @@ h1 {
 
 .projects_item_more a:hover {
     color: #21ab12;
+}
+
+.blue {
+    position: relative;
+    color: #23ccbe;
+}
+
+.blue::before,
+.blue::after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #3ada29;
+    content: '';
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+.blue::before {
+    top: 0;
+    transform: translateY(-10px);
+}
+
+.blue::after {
+    bottom: 0;
+    transform: translateY(10px);
+}
+
+.blue:hover::before,
+.blue:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.blue:hover {
+    color: #3ada29;
 }
 
 @media screen and (max-width: 900px) {
